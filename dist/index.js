@@ -60636,11 +60636,6 @@ function checkCompatibility() {
     if (!supportedPlatforms.includes(platform)) {
         throw new Error(`Unsupported platform "${platform}"`);
     }
-    const arch = os.arch();
-    const supportedArchs = ["x64"];
-    if (!supportedArchs.includes(arch)) {
-        throw new Error(`Unsupported arch "${arch}"`);
-    }
 }
 function getPlatormString() {
     const platform = os.platform();
